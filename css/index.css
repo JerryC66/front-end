@@ -1,0 +1,476 @@
+.banner{
+    height:500px;
+    background-color: #f5f5f5;
+}
+.banner .wrapper{
+    position: relative;
+    height: 500px;
+}
+
+.banner .aside{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0,0,0,.7);
+}
+
+.banner .aside li{
+    height: 50px;
+    line-height: 50px;
+}
+
+.banner .aside a{
+    position: relative;
+    padding-left: 36px;
+    padding-right: 20px;
+    display: block;
+    height: 50px;
+    
+    color: #fff;
+}
+.banner .aside a span{
+    margin-left: 15px;
+    font-size: 14px;
+}
+.banner .aside a:hover{
+    background-color: #27ba9b;
+}
+.banner .aside a::after{
+    position: absolute;
+    right: 19px;
+    top: 19px;
+    content: '';
+    width: 6px;
+    height: 11px;
+    background-image: url(../images/sprites.png);
+    background-position: -80px -110px;
+}
+
+.prev,
+.next{
+    position: absolute;
+    top: 228px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0,0,0,.2);
+    background-image: url(../images/sprites.png);
+    border-radius:50%;
+}
+.prev{
+    left: 260px;
+    background-position: 14px -60px;
+}
+.next{
+    right: 10px;
+    background-position: -23px -60px;
+}
+
+.banner ol{
+    position: absolute;
+    height: 10px;
+    left: 660px;
+    bottom: 30px;
+}
+.banner ol li{
+    float: left;
+    margin-right: 24px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255,255,255,.4);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.banner ol .current{
+    background-color: #fff;
+}
+
+.goods .hd,
+.popular .hd,
+.hot .hd,
+.topic .hd {
+    height: 114px;
+    line-height: 114px;
+}
+
+.goods .hd h2,
+.popular .hd h2,
+.hot .hd h2,
+.topic .hd h2{
+    float: left;
+    font-size: 29px;
+    font-weight: 400;
+    height: 114px;
+    /* color: #27ba9b; */
+}
+.goods .hd h2 span,
+.hot .hd h2 span,
+.popular .hd h2 span{
+    margin-left: 34px;
+    font-size: 16px;
+    color: #999;
+}
+.goods .hd a,
+.hot .hd a,
+.fresh .hd .more,
+.topic .hd .more{ 
+    float: right;
+    color: #999;
+}
+.goods .hd a::after,
+.hot .hd a::after,
+.fresh .hd .more::after,
+.topic .hd .more::after {
+    content: '';
+    margin-left: 13px;
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 -110px;
+    vertical-align: middle;
+}
+
+.goods .bd li,
+.hot .bd li {
+    position: relative;
+    float: left;
+    margin-right: 8px;
+    width: 304px;
+    height: 405px;
+    background-color: #f0f7f4;
+    text-align: center;
+}
+.goods .bd li:last-child {
+    margin-right: 0;
+}
+.hot .bd li:last-child {
+    margin-right: 0;
+}
+.goods .bd li img,
+.hot .bd li img {
+    width: 304px;
+}
+.goods .bd li h3 {
+    margin-top: 18px;
+    margin-bottom: 9px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.goods .bd li div,
+.fresh .bd li div {
+    color: #9a2e1f;
+    font-size: 17px;
+}
+.goods .bd li div span,
+.fresh .bd li div span {
+    font-size: 21px;
+}
+.goods .bd li b {
+    position: absolute;
+    width: 28px;
+    height: 51px;
+    border: 1px solid #27ba9b;
+    top: 18px;
+    left: 17px;
+    border-radius: 2px;
+    font-size: 18px;
+    color: #27ba9b;
+    font-weight: 400;
+    line-height: 24px;
+}
+.hot .bd li h3 {
+    margin-top: 20px;
+}
+.hot .bd li .marks {
+    font-size: 14px;
+    color: #999;
+    padding-top: 8px;
+}
+
+.popular .hd .left,
+.popular .hd .right {
+    display: block;
+    color: black;
+    height: 30px;
+    width: 30px;
+    float: right;
+    margin-top: 79px;
+    margin-right: 10px;
+    line-height: 30px;
+    text-align: center;
+    padding-left: 1px;
+    font-weight: 600;
+    border-radius: 20%;
+    background-color: #e5e0e0;
+
+}
+.popular .hd .right:hover {
+    background-color: #8ee8d4;
+}
+.popular .hd .left:hover {
+    background-color: #8ee8d4;
+}
+
+.popular .pop li {
+    position: relative;
+    float: left;
+    margin-right: 5px;
+    width: 242px;
+    height: 386px;
+    background-color: #eff1f0;
+    text-align: center;
+
+}
+.popular .pop li:last-child {
+    margin-right: 0;
+}
+.popular .pop li img {
+    width: 242px;
+    margin-top: 40px;
+}
+.fresh .hd {
+    height: 96px;
+    /* background-color: #27ba9b; */
+    line-height: 96px;
+}
+.fresh .hd h2 {
+    float: left;
+    font-size: 29px;
+    font-weight: 400;
+    height: 96px;
+}
+
+.fresh .hd ul {
+    float: right;
+    margin-right: 65px;
+}
+.fresh .hd ul li {
+    float: left;
+}
+.fresh .hd ul li a {
+    padding: 2px 7px;
+    margin-left: 6px;
+}
+.fresh .hd li a:hover{
+    background-color: #76d2be;
+    color: #fff;
+} 
+.fresh .bd .lefter{
+    float: left;
+    width: 240px;
+    height: 610px;
+    background-color: #dee3e0;
+}
+.fresh .bd .righter {
+    float: left;
+    width: 1000px;
+    height: 610px;
+    background-color: #fff;
+}
+.fresh .bd .righter li {
+    float: left;
+    height: 304px;
+    width: 242px;
+    margin-left: 8px;
+
+}
+.fresh .bd .righter li img {
+    height: 220px;
+    width: 220px;
+
+}
+.fresh .bd .righter li p {
+    font-size: 15px;
+}
+.topic {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    background-color: #ebedec;
+}
+.topic .bd ul li {
+    float: left;
+    width: 403px;
+    height: 357px;
+    margin-right: 10px;
+    background-color: #fff;
+}
+.topic .bd ul li img {
+    width: 404px;
+    height: 287px;
+}
+.theme {
+    position: relative;
+}
+.topic .theme h3 {
+    position: absolute;
+    left: 5px;
+    bottom: 30px;
+    color: #e6e0e0;
+    font-weight: 600;
+    font-size: 20px;
+}
+.topic .theme p {
+    position: absolute;
+    left: 5px;
+    bottom: 10px;
+    color: #969090;
+}
+
+.connect{
+    height: 310px;
+}
+
+.connect p{
+    margin-left: 130px;
+}
+.connect .one{
+    float: left; 
+    margin-top: 80px;
+    width: 310px;
+    color: grey;
+}
+
+.connect .one .l{
+    position: relative;
+    float: left;
+    width: 93px;
+    height: 92px;
+    margin-left: 50px;
+    padding-top: 90px;
+    font-size: 14px;
+}
+.connect .one .r{
+    position: relative;
+    float: right;
+    width: 93px;
+    height: 92px;
+    padding-top: 90px;
+    font-size: 14px;
+}
+.connect .one .l::after{
+    position: absolute;
+    left: 15px;
+    top: 40px;
+    content: '';
+    width: 29px;
+    height: 27px;
+    background-image: url(../images/sprites.png);
+    background-position: -250px -70px;
+}
+.connect .one .r::after{
+    position: absolute;
+    right: 50px;
+    top: 40px;
+    content: '';
+    width: 29px;
+    height: 32px;
+    background-image: url(../images/sprites.png);
+    background-position: -350px -70px;
+}
+.connect .two{
+    float: left; 
+    margin-top: 80px;
+    width: 310px;
+    color: grey;
+}
+
+
+.connect .two .l{
+    position: relative;
+    float: left;
+    width: 93px;
+    height: 92px;
+    margin-left: 50px;
+    padding-top: 90px;
+    font-size: 14px;
+}
+.connect .two .r{
+    position: relative;
+    float: right;
+    width: 93px;
+    height: 92px;
+    padding-top: 90px;
+    font-size: 14px;
+}
+.connect .two .l::after{
+    position: absolute;
+    left: 5px;
+    top: 40px;
+    content: '';
+    width: 35px;
+    height: 30px;
+    background-image: url(../images/sprites.png);
+    background-position: -205px -15px;
+}
+.connect .two .r::after{
+    position: absolute;
+    right: 60px;
+    top: 40px;
+    content: '';
+    width: 35px;
+    height: 32px;
+    background-image: url(../images/sprites.png);
+    background-position: -350px -12px;
+}
+.connect .three{
+    float: left; 
+    margin-top: 80px;
+    width: 310px;
+    color: grey;
+}
+.connect .three .l{
+    float: left;
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 105px;
+    height: 103px;
+    background-image: url(../uploads/qrcode.png);
+    background-size: contain;
+}
+
+.connect .three .r{
+    float: right;
+    width: 93px;
+    height: 92px;
+    padding-top: 40px;
+    margin-right: 30px;
+    font-size: 14px;
+}
+
+.connect .three .dl{
+    width: 103px;
+    height: 32px;    
+    padding-top: 5px;
+    background-color: green;
+    text-align: center;
+}
+.connect .three .dl a{
+    font-size: 14px;
+    color: white;
+}
+.connect .four{
+    float: right; 
+    margin-top: 80px;
+    width: 310px;
+}
+.connect .four .a {
+    float: right;
+    margin-right: 60px;
+    font-size: 16px;
+    color: grey;
+}
+.connect .four .b{
+    margin-top: 50px;
+    margin-right: 35px;
+    float: right;
+    font-size: 17px;
+    color: black;
+}
+.connect .four .c{
+    float: right;
+    margin-right: 10px;
+    font-size: 14px;
+    color:grey;
+}
